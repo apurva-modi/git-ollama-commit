@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get the git diff
-diff=$(git diff --cached)
+diff=$(git diff --staged --cached)
 
 # Check if there are changes to commit
 if [ -z "$diff" ]; then
